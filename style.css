@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #C1A76B; */
+}
+/* Séparation */
+.separation{
+    margin: 25px auto;
+    padding: 30px auto;
+    width: 200px;
+    height: 5px;
+    background-color: #84694F;
+}
+/* Barre de navigation */
+.nav-bar{
+    width: 100%;
+    height: 50px;
+    background: #84694F !important;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+nav{
+    width: 100%;
+    text-align: center;
+}
+.nav-bar li{
+    line-height: 40px;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: #f1f1f1;
+    text-transform: uppercase;
+}
+.nav-bar li a:hover{
+    color: #C1A76B;
+}
+.nav-bar span{
+    position: relative;
+}
+.nav-bar span::after{
+    content: '';
+    display: block;
+    width: 0;
+    margin: 1px auto 0 auto;
+    height: 2px;
+    border-radius: 2px;
+    background: #C1A76B;
+    transition: all 0.2s ease-out;
+}
+.nav-bar span:hover::after{
+    width: 100%;
+}
+/* Section Accueil */
+.img-accueil{
+    width: 100%;
+    height: 300px;
+    background-image: url(images/pexels-valeria-boltneva-617967.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    background-color: #C1A76B;
+    color: #84694F;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+.accueil p{
+    background-color: #C1A76B;
+    color: #f1f1f1;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 25px 0;
+}
+.adresse{
+    color: #84694F;
+}
+/* Horaires */
+.horaires{
+    padding: 25px;
+    color: #C1A76B;
+    text-align: center;
+}
+.horaires h2{
+    margin: 15px 0;
+    text-decoration: underline;
+}
+.horaires h3{
+    margin: 10px 0;
+}
+.ferme{
+    font-weight: bold;
+}
+.horaires ul li{
+    margin: 5px 0;
+    list-style: none;
+}
+/* Footer */
+.footer{
+    width: 100%;
+    height: 30px;
+    background: #84694F;
+}
+.copyright{
+    color: aliceblue;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.lien-wd72{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+.lien-wd72:hover{
+    color: #C1A76B;
+}
+/* ------ Réalisations ------ */
+.portfolio{
+    width: 100%;
+    background-color: #84694F;
+}
+.titre-port{
+    text-align: center;
+    padding: 50px 0;
+    margin: 15px 0;
+    text-decoration: underline;
+    color: #C1A76B;
+    text-align: center;
+    /* font-size: 50px; */
+    /* padding-left: 300px; */
+}
+.cont-portfolio{
+    width: 100%;
+    height: auto;
+    margin: 0 auto 100px auto;
+    /* padding-left: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    margin: 20px;
+    width: 420px;
+    height: 400px;
+    background: #C1A76B;
+    color: #333;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.item:hover{
+    transform: translateY(-5px);
+}
+.cont-img-port{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.cont-img-port img{
+    width: 100%;
+    height: auto;
+}
+.item h3{
+    padding: 10px 10px 0;
+    font-size: 22px;
+}
+.item p{
+    padding: 10px 10px 0;
+}
+.btn-projets{
+    display: block;
+    margin: 10px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+}
+.btn-projets::after{
+    content: '';
+    height: 240px;
+    width: 100px;
+    background: rgba(255,255,255,0.4);
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: -50px;
+    transform: rotate(-45deg);
+}
+.btn-projets:hover::after{
+    transition: transform 0.3s 0.1s linear;
+    transform: translateX(400px);
+}
